@@ -49,7 +49,7 @@ Server Side (.NET - although this can be done with any server technology):
 A sample of a .NET MVC Controller Action to get your data:
 
 
-[HttpGet]
+<code>[HttpGet]
 public JsonResult LookupCountry(string q, string limit)
 {
   if (limit == "")
@@ -64,3 +64,4 @@ public JsonResult LookupCountry(string q, string limit)
                   
   return Json(tags, JsonRequestBehavior.AllowGet);
 }
+</code>
